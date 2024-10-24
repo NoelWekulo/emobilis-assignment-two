@@ -1,0 +1,330 @@
+/* Custom styles */
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    .blog-post {
+      margin-bottom: 30px;
+    }
+    /* General Navbar Styling */
+    .navbar {
+      padding: 15px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Change background on scroll */
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navbar brand styling */
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    .navbar-brand:hover {
+      color: #f8f9fa;
+    }
+
+    /* Navbar link styling */
+    .nav-link {
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* Active and hover states */
+    .nav-link:hover,
+    .nav-link.active {
+      color: #0d6efd;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+    }
+
+    /* Navbar toggler icon (hamburger) */
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* Make navbar look more stylish on mobile */
+    @media (max-width: 991px) {
+      .nav-link {
+        margin: 5px 0;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    /* Transition navbar background when scrolled */
+    .navbar.scrolled {
+      background-color: #333;
+    }
+
+    #home {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel-caption p {
+      font-size: 1.25rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-light {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-light:hover {
+      background-color: #f8f9fa;
+    }
+
+    /* Customize the control icons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1); /* Make the control icons white */
+    }
+
+    #about {
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-description {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .about-list li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .about-list i {
+      color: #0d6efd; /* Bootstrap's primary color */
+      margin-right: 10px;
+    }
+
+    .btn-primary {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+    }
+
+    .rounded-circle {
+      border: 5px solid #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add hover effect to the Learn More button */
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transition: background-color 0.3s ease;
+    }
+    #services {
+      background-color: floralwhite;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #333;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #0d6efd;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Add some padding between the rows on smaller screens */
+    @media (max-width: 767px) {
+      .card {
+        margin-bottom: 30px;
+      }
+    }
+    #blog {
+      background-color: #fff;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #333;
+    }
+
+    .blog-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-card .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #0d6efd;
+    }
+
+    .blog-card .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .blog-card .card-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn-primary {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border-radius: 30px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Responsive Padding for Blog Section */
+    @media (max-width: 767px) {
+      .blog-card {
+        margin-bottom: 30px;
+      }
+    }
+    #contact {
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #555;
+    }
+
+    .form-control {
+      border: 2px solid #ced4da;
+      border-radius: 0.3rem;
+      padding: 15px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: none;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    /* Adding margin for mobile view */
+    @media (max-width: 768px) {
+      .form-control {
+        margin-bottom: 15px;
+      }
+    }
+
+
+
+
+
